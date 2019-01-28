@@ -408,8 +408,7 @@ button:disabled {
 }
 
 #area {
-	position: relative;
-	width: 1040px;
+  margin: auto;
 	background-color: #222;
 	overflow: visible;
 }
@@ -544,7 +543,6 @@ ol.sidemenu {
 	position: relative;
 	width: 740px;
 	padding: 12px 32px;
-	float: right;
 }
 
 .book_page a {
