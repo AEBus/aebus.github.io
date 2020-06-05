@@ -1,0 +1,281 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>A Rank Tracker</title>
+  
+
+<style>
+	.mydragable {
+		position: absolute;
+		z-index: 9;
+		cursor: move;
+	}
+
+</style></head>
+
+
+
+
+<body>
+
+
+ <!-- 	<div id="mydiv2_1" class="mydragable" style="left:1050px; top:100px;">  
+		<img src="./images/target2.png">
+	</div>
+	<div id="mydiv2_2" class="mydragable" style="left:1100px; top:100px;">  
+		<img src="./images/target2.png">
+	</div>
+	<div id="mydiv3_1" class="mydragable" style="left:1100px; top:200px;">  
+		<img src="./images/target3.png">
+	</div>  
+	<div id="mydiv3_2" class="mydragable" style="left:1100px; top:200px;">
+		<img src="./images/target3.png">
+	</div> -->
+	<div id="mydiv1_1" class="mydragable" style="left:700px; top:20px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv1_2" class="mydragable" style="left:750px; top:20px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:70px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>
+	<div>
+	  <img draggable="false" src="./images/The_Fringes.png">
+	</div>
+	
+	<div id="mydiv2_1" class="mydragable" style="left:700px; top:900px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv2_2" class="mydragable" style="left:750px; top:900px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:950px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>
+	<div>
+	  <img draggable="false" src="./images/The_Peaks.png">
+	</div>
+
+	<div id="mydiv3_1" class="mydragable" style="left:700px; top:1780px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv3_2" class="mydragable" style="left:750px; top:1780px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:1830px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/The_Lochs.png">
+	</div>
+
+	<div id="mydiv4_1" class="mydragable" style="left:700px; top:2660px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv4_2" class="mydragable" style="left:750px; top:2660px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:2710px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/The_Ruby_Sea.png">
+	</div>
+
+	<div id="mydiv5_1" class="mydragable" style="left:700px; top:3540px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv5_2" class="mydragable" style="left:750px; top:3540px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:3590px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/Yanxia.png">
+	</div>
+
+	<div id="mydiv6_1" class="mydragable" style="left:700px; top:4420px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv6_2" class="mydragable" style="left:750px; top:4420px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:4470px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/The_Azim_Steppe.png">
+	</div>
+
+	<div id="mydiv7_1" class="mydragable" style="left:700px; top:5300px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv7_2" class="mydragable" style="left:750px; top:5300px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:5350px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/Lakeland.png">
+	</div>
+
+	<div id="mydiv8_1" class="mydragable" style="left:700px; top:6180px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv8_2" class="mydragable" style="left:750px; top:6180px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:6230px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/Kholusia.png">
+	</div>
+
+	<div id="mydiv9_1" class="mydragable" style="left:700px; top:7060px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv9_2" class="mydragable" style="left:750px; top:7060px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:7110px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/Amh_Araeng.png">
+	</div>
+
+	<div id="mydiv10_1" class="mydragable" style="left:700px; top:7940px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv10_2" class="mydragable" style="left:750px; top:7940px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:7990px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/Il_Mheg.png">
+	</div>
+
+	<div id="mydiv11_1" class="mydragable" style="left:700px; top:8820px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv11_2" class="mydragable" style="left:750px; top:8820px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:8870px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/The_Rak'tika_Greatwood.png">
+	</div>
+
+	<div id="mydiv12_1" class="mydragable" style="left:700px; top:9700px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div id="mydiv12_2" class="mydragable" style="left:750px; top:9700px;">  
+		<img src="./images/target1.png">
+	</div>
+	<div class="mydragable" style="left:705px; top:9750px;">
+		<button onclick="clearMarkers()">Clear Markers</button>
+	</div>	
+	<div>
+	  <img draggable="false" src="./images/The_Tempest.png">
+	</div>
+	
+	<script>
+
+		var dragables = document.getElementsByClassName("mydragable")
+	
+		for (var i = 0, ele; ele = dragables[i++]; ) {
+		  dragElement(ele);
+		}
+	
+		for (var i = 0, ele; ele = dragables[i++]; ) {
+		  LoadElementPos(ele);
+		}
+	
+	
+		function dragElement(elmnt) {
+		  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+	
+		  elmnt.onmousedown = dragMouseDown;
+	
+		  function dragMouseDown(e) {
+			e = e || window.event;
+			e.preventDefault();
+			// get the mouse cursor position at startup:
+			pos3 = e.clientX;
+			pos4 = e.clientY;
+			document.onmouseup = closeDragElement;
+			// call a function whenever the cursor moves:
+			document.onmousemove = elementDrag;
+		  }
+	
+		  function elementDrag(e) {
+			e = e || window.event;
+			e.preventDefault();
+			// calculate the new cursor position:
+			pos1 = pos3 - e.clientX;
+			pos2 = pos4 - e.clientY;
+			pos3 = e.clientX;
+			pos4 = e.clientY;
+			// set the element's new position:
+			
+		
+			var nx = elmnt.offsetLeft - pos1;			
+			if (nx > 1000) { nx = 1000;	}			
+			if (nx < 0) {  nx = 0; }
+
+			
+			var ny = elmnt.offsetTop - pos2;
+			if (ny < 0)	{
+			  ny = 0;
+			}
+							
+			elmnt.style.left = nx + "px";
+			elmnt.style.top = ny + "px";
+			
+		  }
+	
+		  function closeDragElement() {
+			/* stop moving when mouse button is released:*/
+			document.onmouseup = null;
+			document.onmousemove = null;
+			SaveElementPos(elmnt);
+		  }
+		}
+	
+		function LoadElementPos(elment) {
+		  var cords = window.localStorage.getItem(elment.id);
+		  
+		  if (cords != null) {
+			var cc = JSON.parse(cords);
+			
+			elment.style.left = cc.x;
+			elment.style.top = cc.y;
+		  }
+		}
+	
+		function SaveElementPos(elment) {
+		  var cc = { x: elment.style.left, y: elment.style.top }
+		  window.localStorage.setItem(elment.id,JSON.stringify(cc));
+		}
+
+		function clearMarkers() {
+			var r = confirm("Clear all markers? (Warning, this cannot be undone.)");
+			if (r == true) {
+					localStorage.clear();
+					location.reload();
+			} 
+		}
+
+
+	</script>
+	
+
+
+
+<div> </div></body></html>
